@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyFoodBird - Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            color: #e0e0e0;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px 30px;
+            background: linear-gradient(180deg, rgba(255,165,0,0.15) 0%, transparent 100%);
+        }
+        .hero h1 { font-size: 2.2em; color: #fff; margin-bottom: 5px; }
+        .hero .icon { font-size: 3em; margin-bottom: 10px; }
+        .hero .subtitle { color: #ffa500; font-size: 1.1em; font-weight: 600; }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: rgba(0,0,0,0.2);
+            border-bottom: 1px solid rgba(255,165,0,0.2);
+        }
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 6px 16px;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+        nav a:hover, nav a.active { color: #fff; background: rgba(255,165,0,0.2); }
+        nav a.active { color: #ffa500; }
+        .container { max-width: 800px; margin: 0 auto; padding: 30px 20px 60px; }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+        h2 { color: #ffa500; font-size: 1.3em; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+        h2 .emoji { font-size: 1.2em; }
+        p { line-height: 1.7; margin-bottom: 12px; color: #ccc; }
+        a { color: #ffa500; text-decoration: none; }
+        a:hover { text-decoration: underline; color: #ffb733; }
+        .contact-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #ffa500, #ff6b00);
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1em;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255,165,0,0.3);
+            text-decoration: none;
+            color: #fff;
+        }
+        .faq-item { margin-bottom: 20px; }
+        .faq-item h3 { color: #e0e0e0; font-size: 1.05em; margin-bottom: 8px; }
+        .faq-item p { color: #aaa; }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #555;
+            font-size: 0.85em;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="icon">&#x1F426;</div>
+        <h1>FlyFoodBird</h1>
+        <div class="subtitle">Support</div>
+    </div>
+    <nav>
+        <a href="index.html">Privacy</a>
+        <a href="support.html" class="active">Support</a>
+        <a href="marketing.html">About</a>
+    </nav>
+    <div class="container">
+        <div class="card" style="text-align: center;">
+            <h2 style="justify-content: center;"><span class="emoji">&#x1F4E7;</span> Get in Touch</h2>
+            <p>Having trouble with FlyFoodBird? We're here to help! Send us an email and we'll get back to you as soon as possible.</p>
+            <a href="mailto:mhrstge@gmail.com" class="contact-btn">Email Support</a>
+        </div>
+        <div class="card">
+            <h2><span class="emoji">&#x2753;</span> Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How do I play?</h3>
+                <p>Tap or click to make the bird fly up. Collect food to earn points and avoid obstacles. Explore different biomes and unlock new skins!</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I unlock new skins?</h3>
+                <p>Earn coins by collecting food during gameplay. Visit the in-game shop to browse and purchase skins with your earned coins.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I play offline?</h3>
+                <p>Yes! FlyFoodBird works fully offline. An internet connection is only needed to display ads.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I remove ads?</h3>
+                <p>Currently ads help keep the game free. You can watch rewarded ads voluntarily to earn bonus coins.</p>
+            </div>
+            <div class="faq-item">
+                <h3>The game is crashing, what should I do?</h3>
+                <p>Please make sure your app is updated to the latest version. If the problem persists, email us with your device model and OS version.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2><span class="emoji">&#x1F4F1;</span> System Requirements</h2>
+            <p><strong>iOS:</strong> Requires iOS 15.0 or later. Compatible with iPhone and iPad.</p>
+            <p><strong>Android:</strong> Requires Android 7.0 (API 24) or later.</p>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2026 Mrstge. All rights reserved.
+    </div>
+</body>
+</html>
